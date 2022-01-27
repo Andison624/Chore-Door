@@ -1,6 +1,8 @@
+//3:Create a global variable called doorImage1/2/3. Use a JavaScript DOM method to assign this global variable to the HTML element with the id of door1/2/3.
 let doorImage1 = document.getElementById('door1');
 let doorImage2 = document.getElementById('door2');
 let doorImage3 = document.getElementById('door3');
+//5:Create a new global variable called botDoorPath. Set its value to this string which is the path containing the ChoreBot image
 let botDoorPath = "https://content.codecademy.com/projects/chore-door/images/robot.svg";
 let beachDoorPath = "https://content.codecademy.com/projects/chore-door/images/beach.svg";
 let spaceDoorPath = "https://content.codecademy.com/projects/chore-door/images/space.svg";
@@ -68,7 +70,8 @@ const randomChoreDoorGenerator = () => {
     }
 };
 randomChoreDoorGenerator();
-
+//4:Assign doorImage1/2/3.onclick to a new, empty arrow function.This function will run whenever the first door image element is clicked.
+//6:change the src of doorImage1/2/3 to the value of botDoorPath.Now when click on the door, watch as the closed door image changes to the other.
 doorImage1.onclick = () => {
   if(currentlyPlaying && !isClicked(doorImage1)){
   doorImage1.src = openDoor1;
